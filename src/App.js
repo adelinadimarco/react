@@ -16,10 +16,20 @@ function App() {
       <main>
          <h2>Productos en oferta</h2>
          <CardPerfume 
-         brand=''
-         name=''
-         image=''
-         description='' />
+         brand='armani'
+         name='pour homme'
+         image='imagen'
+         description='perfume armani blabla' />
+                  <CardPerfume 
+         brand='armani'
+         name='pour homme'
+         image='imagen'
+         description='perfume armani blabla' />
+                  <CardPerfume 
+         brand='armani'
+         name='pour homme'
+         image='imagen'
+         description='perfume armani blabla' />
       </main>
       <footer>
          <p>

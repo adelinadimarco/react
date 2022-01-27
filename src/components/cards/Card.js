@@ -4,26 +4,27 @@ import './card.css'
 
 import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button } from 'reactstrap';
 
-const CardPerfume = (props) => {
+const CardPerfume = ({brand, name, image, description}) => {
   return (
 <div>
   <Card
   >
     <CardBody>
       <CardTitle tag="h5">
-        Card title
+        {name}
       </CardTitle>
       <CardSubtitle
         className="mb-2 text-muted"
         tag="h6"
       >
-        Card subtitle
+        {brand}
       </CardSubtitle>
+
       <CardText>
-        Some quick example text to build on the card title and make up the bulk of the card's content.
+        {description}
       </CardText>
       <Button>
-        Button
+        AGREGAR AL CARRITO
       </Button>
     </CardBody>
   </Card>
