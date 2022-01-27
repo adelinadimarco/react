@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';  
 import './App.css';
+
+// componentes
+import NavBar from './components/header/NavBar';
+import CardPerfume from './components/cards/Card';
+ 
+//const user = 'adelina';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <NavBar />
       </header>
+      <main>
+         <h2>Productos en oferta</h2>
+         <CardPerfume 
+         brand=''
+         name=''
+         image=''
+         description='' />
+      </main>
+      <footer>
+         <p>
+          Adelina Rodríguez Di Marco - curso React.js
+        </p>
+      </footer>
     </div>
   );
 }
