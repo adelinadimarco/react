@@ -4,7 +4,7 @@ import './card.css'
 
 import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button } from 'reactstrap';
 
-const CardPerfume = () => {
+const CardPerfume = (props) => {
 <div>
   <Card
   >
