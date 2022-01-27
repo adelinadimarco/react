@@ -5,6 +5,7 @@ import './card.css'
 import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button } from 'reactstrap';
 
 const CardPerfume = (props) => {
+  return (
 <div>
   <Card
   >
@@ -27,6 +28,7 @@ const CardPerfume = (props) => {
     </CardBody>
   </Card>
 </div>
-}
+);
+};
 
 export default CardPerfume;
