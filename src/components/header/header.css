@@ -1,13 +1,14 @@
 .navegacion {
     margin: 0;
     width: 100vw;
+    height: 10vh;
     overflow-x: hidden;
     display: inline-flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
     border-bottom: 2px solid black;
-    position: absolute;
+
 }
 
 ul li {
@@ -28,6 +29,8 @@ ul li {
     text-decoration: none;
   }
   .size {
+    margin: 2px;
     height: 50%;
     width: 50%;
+    float: center;
   }
