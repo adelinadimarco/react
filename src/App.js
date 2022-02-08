@@ -6,6 +6,7 @@ import NavBar from './components/header/NavBar';
 import CardPerfume from './components/cards/Card';
 import ItemCounter from './components/counter/ItemCount';
 import Footer from './components/footer/footer'
+import ItemListContainer from './components/itemList/itemListContainer';
 
 // this.state = { variable que querramos, ej: age: 24}
 // state es actualizable con class components (this refiere a clase)
@@ -44,6 +45,9 @@ const App = () => {
         </div>
         <div >
           <ItemCounter />
+        </div>
+        <div>
+          <ItemListContainer />
         </div>
       </main>
       <footer >

@@ -1,16 +1,15 @@
-import { useEffect } from "react";
-import { useState } from "react/cjs/react.development";
+import React, { useState, useEffect } from "react";
 import ItemList from "./itemList.js";
-import perfumes from './productos.js'
 
-
-const ItemListContainer = ({ hola }) => {
+const ItemListContainer = () => {
     const [products, setProducts] = useState([]);
-
+     //funcion para pasar callback -> fetch
+     // useEffect(callback)
     useEffect(() => {
         const promiseProducts = new Promise((resolve, reject)=>{
+            console.log(products)
             setTimeout(()=>{
-                resolve(perfumes)
+                resolve(products)
             }, 2000)
         });
 
@@ -21,20 +20,14 @@ const ItemListContainer = ({ hola }) => {
             .catch((error) => {
                 console.log(error)
             })
-    }, []);
+    });
 
     return (
         <div>
-            <h3>{hola}</h3>
+            <h3>{}</h3>
             <ItemList products={products}></ItemList>
         </div>
     )
 };
-    // fetch('https://jsonplaceholder.typicode.com/todos')
-    //     .then(res => res.json())
-    //     // .then((json) => console.log(json));
-    //     .then((json) => setTodos(json))
-    //     .catch((error)=>{
-    //         console.log(error)
-    //     });
+
 export default ItemListContainer;

@@ -1,7 +1,7 @@
 import React from 'react';
 // mostrar los datos del producto
 // como si fuera una card de contenido
-const Item = ((products)=> {
+const Item = ({products}) => {
     return (
  <div>
      <h4>{products.name}</h4>
@@ -10,7 +10,7 @@ const Item = ((products)=> {
      <p>{products.description}</p>
      <p>{products.price}</p>
  </div>
-    );
-});
+    )
+};
 
 export default Item;

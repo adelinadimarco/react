@@ -1,13 +1,15 @@
-import Item from '/components/ItemList'
+import Item from './item.js'
 // ItemList para mapear los perfumes(productos)
 const ItemList = ({ products }) => {
-    return (<div>
-        {    // usar erramienta key para que react reconozca el mapeo
-            products.map((parfume) => (
-                <Item key={parfume.id} parfume={parfume}></Item>
-            )) // se puede cambiar el nombre de product x perfume o lo que sea puntual
-        };
-    </div>);
-};
+    return (<div>        
+        {products.map((products) => {
+            return (
+                <div key={products.id}>
+                <Item  products={products} />
+                </div>
+            )
+        })}   
+    </div>)
+};  // usar herramienta key para que react reconozca el mapeo
 
 export default ItemList;
