@@ -3,15 +3,11 @@ import './footer.css';
 
 // barra de navegación inicial
 
-const Footer = (props) => {
+const Footer = ( {copyright}) => {
     return (
         <div className='navegacion'>
             <div >
-                <ul>
-                    <li>
-
-                    </li>
-                </ul>
+              {copyright}
             </div>
             <ul>
                 <li> <a href="facebook.com" > /PacificParfumarie </a></li>
@@ -21,6 +17,9 @@ const Footer = (props) => {
            {/* <a href='whatsapp'><img src={whatsapp} alt='whatsapp' className='size' />whatsapp</a> */}
         </div>
     );
+};
+Footer.defaultProps = {
+   copyright: '2022 todos los derechos reservados.'
 };
 
 export default Footer;

@@ -65,3 +65,11 @@ const products = [
       },
     ]
 export default products;
+// map es una función que ordena arrays
+const values = products.map(
+  (loquesea, idx) => 
+  `[${idx + 1}] - name: ${loquesea.name} - price: ${loquesea.price}`
+);
+
+console.log(values);
+console.log(products);

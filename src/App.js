@@ -5,8 +5,10 @@ import './App.css';
 import NavBar from './components/header/NavBar';
 import CardPerfume from './components/cards/Card';
 import ItemCounter from './components/counter/ItemCount';
-import Footer from './components/footer/footer'
-import ItemListContainer from './components/itemList/itemListContainer';
+import Footer from './components/footer/footer';
+import NuevoItem from './components/items/holaItem';
+//import ItemListContainer from './components/itemList/itemListContainer';
+//import NASA from './components/api.js/mostrarApi';
 
 // this.state = { variable que querramos, ej: age: 24}
 // state es actualizable con class components (this refiere a clase)
@@ -44,10 +46,10 @@ const App = () => {
             price='100' />
         </div>
         <div >
-          <ItemCounter />
+          <ItemCounter initial='1' stock='10' />
         </div>
         <div>
-          <ItemListContainer />
+          <NuevoItem />
         </div>
       </main>
       <footer >

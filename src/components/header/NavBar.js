@@ -5,7 +5,7 @@ import logo from './pacific logo.png'
 
 // barra de navegación inicial
 
-const NavBar = (props) => {
+const NavBar = ({props}) => {
     return (
         <div className='navegacion'>
             <div ><a href='index.html'><img src={logo} alt='logo' className='size' /></a></div>
