@@ -11,7 +11,10 @@ const NuevoItem = () => {
   useEffect(() => {
     axios('https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=DEMO_KEY'
     ).then((res) => setProduct(res.data));
-
+    // setTimeout(() => {
+    //   setIsLoading(false);
+    // }, 3500);
+    
   }, []);
 
   //   //funcion para pasar callback -> fetch

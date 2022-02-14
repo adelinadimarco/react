@@ -1,7 +1,8 @@
 /////////
 import React from 'react';
 import './header.css';
-import logo from './pacific logo.png'
+import logo from './pacific logo.png';
+import {Link} from 'react-router-dom';
 
 // barra de navegación inicial
 
@@ -10,10 +11,9 @@ const NavBar = ({props}) => {
         <div className='navegacion'>
             <div ><a href='index.html'><img src={logo} alt='logo' className='size' /></a></div>
             <ul>
-                <li> <a href="index.html" > Tienda </a></li>
-                <li> <a href='ofertas.html'>En oferta!</a></li>
-                <li> <a href="carrito.html">Carrito </a></li>
-                <li> < a href="contacto.html" > Contacto </a></li>
+            <Link to='/'>Home</Link>
+                <Link to='/contact'>Contact</Link>
+                <Link to='/about'>About</Link>
             </ul>
         </div>
     );
