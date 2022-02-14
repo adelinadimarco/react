@@ -27,6 +27,6 @@ const ItemCounter = ({ stock, initial}) => {
             <button onClick={handlerCounterDown}>Menos</button>
         </div>
         )
-};
+}
 
 export default ItemCounter;

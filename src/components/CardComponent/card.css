@@ -1,7 +1,10 @@
+.tarjeta {
+    display: inline-flex;
+     
+}
 .perfume {
     width: 30vw;
     border-bottom: 1px solid black ;
-     
 }
 h3, h4 {
     text-transform: uppercase;
