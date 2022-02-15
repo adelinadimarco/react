@@ -8,11 +8,11 @@ const CardPerfume = ({ data }) => {
   return (
     <div className='tarjeta'>
       <div className='perfume'>
-        <h3>{data.title}</h3>
+        <h3>{data.char_id}</h3>
         <h4>{data.name}</h4>
-        <img src={data.prev} alt='foto' className='fotoSize' />    
-        {/* <p>{data.username}</p> */}
-        <h5>$ {data.feet}</h5>
+        <img src={data.img} alt='foto' className='fotoSize' />    
+        <p>{data.occupation}</p>
+        <h5>$ {data.nickname}</h5>
         <button>COMPRAR</button>
         <input type="hidden" value="5000" />
         <div >

@@ -28,6 +28,8 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/about' element={<About />} />
+        {/* <Route path='/*' element={Error />} /> */}
+        {/* // error 404 - erorr en ruta           */}
       </Routes>
     </Router>   
       </header>
