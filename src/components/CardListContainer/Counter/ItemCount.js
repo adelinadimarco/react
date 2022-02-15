@@ -10,15 +10,18 @@ const ItemCounter = ({ stock, initial}) => {
     //   }
 
     console.log(counter);
-    // funciones contador de mas y menos
-    const handlerCounterUp = () => {
+    let [stock] = useState(10);
 
+    const handlerCounterUp = () => {
+        if (counter < stock)
         setCounter(counter + 1);
     };
+    
     const handlerCounterDown = () => {
-        if (this.state.counter > 0){
-        setCounter(counter - 1);}
+        if (counter > 0)
+        setCounter(counter - 1)
     };
+    
     return (
         <div>
             <p>{counter}</p>
