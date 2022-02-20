@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // incluir una promise
 //agrupa componenetes de item.js
 //promise llama a un objeto asincronico que devuelve datos: id, title, etc
 
 const ItemList = ( {items}) => {
+  const [items, setItems] = useState();
+
     return (
         <div>
       {items.map((items) => {
@@ -17,9 +19,6 @@ const ItemList = ( {items}) => {
 
         </div>
     );
-};
-ItemList.defaultProps = {
-   items: '2022 todos los derechos reservados.'
 };
 
 export default ItemList;
