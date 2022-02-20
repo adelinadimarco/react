@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 // contador de articulos
-const ItemCounter = ({ stock, initial}) => {
+const ItemCounter = () => {
     const [counter, setCounter] = useState(0);
 
     // let onChange = (event) => {
@@ -10,15 +10,18 @@ const ItemCounter = ({ stock, initial}) => {
     //   }
 
     console.log(counter);
-    // funciones contador de mas y menos
-    const handlerCounterUp = () => {
+    let [stock] = useState(10);
 
+    const handlerCounterUp = () => {
+        if (counter < stock)
         setCounter(counter + 1);
     };
+    
     const handlerCounterDown = () => {
-        if (this.state.counter > 0){
-        setCounter(counter - 1);}
+        if (counter > 0)
+        setCounter(counter - 1)
     };
+    
     return (
         <div>
             <p>{counter}</p>

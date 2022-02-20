@@ -2,12 +2,10 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // componentes
-import NavBar from './components/header/NavBar';
-import Footer from './components/footer/footer';
+import NavBar from './components/Header/NavBar';
+import Footer from './components/Footer/Footer';
 import NuevoItem from './components/CardListContainer/NuevoItem';
-import Home from './view/Home';
-import Contact from './view/Contact';
-import About from './view/About';
+import ItemListContainer from './ItemListContainer/ItemListContainer';
 
 // this.state = { variable que querramos, ej: age: 24}
 // state es actualizable con class components (this refiere a clase)
@@ -25,8 +23,8 @@ const App = () => {
         <NavBar />
       </div>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/' element={<ItemListContainer />} />
+        <Route path='/item/:id' element={<Contact />} />
         <Route path='/about' element={<About />} />
         {/* <Route path='/*' element={Error />} /> */}
         {/* // error 404 - erorr en ruta           */}
