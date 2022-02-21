@@ -1,13 +1,13 @@
 import React from 'react';
-import ItemCounter from './counter/ItemCounter'
+// import ItemCounter from './counter/ItemCounter'
 
 // detalles del producto
 
 const ItemDetail = ({ data }) => {
     
-    onAdd() => {
-        <ItemCounter />
-    }
+    // onAdd() => {
+    //     <ItemCounter />
+    // }
 
   return (
     <div className='perumeDetail'>
@@ -18,7 +18,7 @@ const ItemDetail = ({ data }) => {
         <h5>$ {data.nickname}</h5>
         <button>COMPRAR</button>
         <div>
-            <ItemCounter />
+            {/* <ItemCounter /> */}
         </div>
         <input type="hidden" value="5000" />
 

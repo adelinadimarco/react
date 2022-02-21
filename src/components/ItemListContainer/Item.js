@@ -2,7 +2,6 @@ import React from 'react';
 // productos principales
 const Item = ({ data }) => {
 
-
   return (
     <div className='tarjeta'>
 

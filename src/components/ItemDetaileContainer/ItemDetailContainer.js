@@ -1,20 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import ItemDetail from './ItemDetail'
+import ItemDetail from './ItemDetail';
 
-const getItem = () => {
+const ItemDetailContainer = () => {
 
-    const [isLoading, setIsLoading] = useState(true);
+    const  [product, setProduct] = useState(true);
 
     useEffect(() => {
-        fetch('ItemDetail')
-            .then((response) => response.json())
-            .then(json => setProduct(json));
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 1000);
-    }, []);
+
+        fetch('https://www.breakingbadapi.com/api/characters')
+          .then((response) => response.json())
+          .then(json => setProduct(json[1]));
+    
+      }, []);
+
+      return (
+          <div>
+             <ItemDetail data={product}/> 
+          </div>
+      )
 }
 
-function ItemDetailContainer() {
-
-} 
+export default ItemDetailContainer;

@@ -34,3 +34,9 @@ ul li {
     width: 50%;
     float: center;
   }
+
+  .bag {
+    margin: 2vh;
+    height: 40%;
+    width: 65%;
+  }

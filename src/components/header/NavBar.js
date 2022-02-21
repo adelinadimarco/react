@@ -3,7 +3,7 @@ import React from 'react';
 import './header.css';
 import logo from './pacific logo.png';
 import {Link} from 'react-router-dom';
-
+import CartWidget from '../CartWidget/CartWidget';
 // barra de navegación inicial
 
 const NavBar = ({props}) => {
@@ -15,6 +15,7 @@ const NavBar = ({props}) => {
                 <Link to='/contact'>Contact</Link>
                 <Link to='/about'>About</Link>
             </ul>
+            <CartWidget />
         </div>
     );
 };

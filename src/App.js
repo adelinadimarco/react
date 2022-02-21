@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // componentes
 import NavBar from './components/Header/NavBar';
 import Footer from './components/Footer/Footer';
-import ItemList from './components/ItemListContainer/ItemList';
-import ItemListContainer from './ItemListContainer/ItemListContainer';
+
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetaileContainer/ItemDetailContainer';
 
 // this.state = { variable que querramos, ej: age: 24}
 // state es actualizable con class components (this refiere a clase)
@@ -17,31 +18,23 @@ const App = () => {
 
   return (
     <div className="App" >
-      <header>
-      <Router>
-      <div>
-        <NavBar />
-      </div>
-      <Routes>
-        <Route path='/' element={<ItemListContainer />} />
-        <Route path='/item/:id' element={} />
-        <Route path='/about' element={} />
-        {/* <Route path='/*' element={Error />} /> */}
-        {/* // error 404 - erorr en ruta           */}
-      </Routes>
-    </Router>   
-      </header>
 
-      <main>
-        <h2> Productos en oferta </h2>
-        <div className='displayProductos'>
-          <ItemList />
-        </div>
-      </main>
-      
-      <footer >
-        <Footer />
-      </footer>
+      <Router>
+        <header>
+          <NavBar />
+        </header>
+        <Routes>
+          <Route path='/' element={<ItemListContainer />} />
+          {/* {/* <Route path='/item/:id' element={} /> */}
+          <Route path='/detail' element={<ItemDetailContainer />} />
+
+        </Routes>
+
+        <footer >
+          <Footer />
+        </footer>
+      </Router>
+
     </div>
   );
 };
